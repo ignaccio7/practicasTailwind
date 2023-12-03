@@ -1,0 +1,66 @@
+
+TAILWINDCSS
+https://tailwindcss.com/docs/installation
+
+para instalar tailwind
+inicializamos un proyecto 
+npm init -y
+
+para instalas las dependencias de tailwind
+npm install -D tailwindcss
+npx tailwindcss init
+
+luego en el archivo tailwind.config.js
+en la parte de content especificaremos los archivos en donde tailwind
+debera buscar para ejecutar las clases utilitarias que usaremos
+
+ content: ["./src/**/*.{html,js}"]
+
+con esta linea especificaremos que busque los archivos html y js
+
+ahora creamos una carpeta -> src para crear nuestra landing 
+y como especifamos esa carpeta utilizara tailwindcss
+
+
+luego dentro de la carpeta creamos un index.html
+
+y en una carpeta css -> config.css y copiamos
+3 directivas que insertaran css en un archivo nuevo que se generara de manera dinamica
+@tailwind base; // inserta estilos base de tailwind basicamente resetea o normaliza el css
+@tailwind components; // corresponde estilos para components como botones cards etc
+@tailwind utilities; // se encuentra el corazon de tailwind todas las clases utilitarias
+
+por ultimo 
+en el package.json creamos un nuevo script para darle un archivo de entrada para que traiga las directivas de tailwind
+luego uno de salida en donde ese archivo estara todas las clases de utilidad que utilicemos
+
+"scanTailwind":"npx tailwindcss -i ./src/<archivo de entrada>.css -o ./dist/<archivo de salida>.css --watch"
+
+
+
+para ver dentro de la documentacion nos indica exactament con ejemplos acerca de como usaremos
+tanto padding
+https://tailwindcss.com/docs/padding
+como margin
+https://tailwindcss.com/docs/margin
+
+y de algo que nos podemos dar cuenta esque 1rem valdra 16px
+eso lo podemos ver en
+https://tailwindcss.com/docs/customizing-spacing
+
+y si quisieramos ver la paleta de colores que usa tailwind
+https://tailwindcss.com/docs/customizing-colors que los colores iran desde un 50 a 950
+
+
+-------------------------------
+en la carpeta 00-landing 
+descargaremos los archivos de una pagina para practicar de frontendmentor
+https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5
+
+y los archivos descargados lo colocaremos en la carpeta design para ver el diseño terminado y un archivo md para ver los requerimientos
+-> si quisieramos agregar una fuente extra en tailwind entonces deberiamos configurarla directamente en el tailwind.config.js
+
+https://tailwindcss.com/docs/font-family
+
+-------------------------------
+

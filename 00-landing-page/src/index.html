@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-principal">
+    <!-- <h1 class="text-3xl text-center text-green-500">TailwindCSS</h1> -->
+
+    <!-- <div class="w-1/2 h-screen bg-purple-300 mx-auto"></div>
+    <div class="w-12 h-44 bg-blue-500 mx-auto"></div> -->
+    <!-- <div class="w-full h-screen bg-red-500 mx-auto">
+        <h1 class="text-slate-100 text-5xl text-center pt-3">Este es un titulo</h1>
+    </div> -->
+
+    <header>
+        <nav class="container h-20 flex justify-between items-center">
+            <a href="./" class="max-w-[150px] min-w-[100px]">
+                <img src="./images/logo.svg" alt="logo" class="w-full h-full">
+            </a>
+
+
+            <input type="checkbox" id="hamburguer" class="peer hidden">
+            <label for="hamburguer"
+                class="bg-open-menu bg-cover bg-center w-6 h-5 cursor-pointer z-50 peer-checked:bg-close-menu transition-all md:hidden"></label>
+
+            <!-- <ul class="hidden peer-checked:block"> -->
+            <div
+                class="fixed inset-0 bg-gradient-to-b from-white/70 to-black/60 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none z-40">
+                <ul
+                    class="absolute top-24 inset-x-0 mx-auto p-12 w-[90%] max-w-[500px] bg-white grid gap-6 font-bold items-center text-center text-dark-blue shadow-2xl rounded-md md:static md:grid-flow-col md:w-max md:shadow-none md:gap-3 md:max-w-none">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About-Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+
+            <!-- <a href="#" class="bg-brigth-red text-vary-light-gray block py-4 px-12 rounded-full"> -->
+            <a href="#" class="button shadow-sm shadow-brigth-red/30 hidden md:block">
+                Get Started
+            </a>
+        </nav>
+
+
+        <!--- SECCION PARA LA ILUSTRACION -->
+
+        <section class="container grid gap-8 justify-items-center pb-12 md:grid-cols-2 md:py-24">
+
+            <img src="./images/illustration-intro.svg" alt="ilustracion" class="w-full max-w-lg md:order-1">
+
+            <article class="text-center space-y-6  md:text-left md:space-y-8">
+                <h1 class="text-4xl font-bold text-very-dark-blue md:text-5xl">Bring everyone together to build better
+                    products.</h1>
+                <p class="text-dark-grayish-blue">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+                    vero fugiat nisi iste, neque veniam, incidunt aliquid quia iure non ducimus eaque sunt corrupti
+                    obcaecati nihil laudantium in odit totam.</p>
+                <a href="#" class="inline-block button shadow-xl shadow-brigth-red/30">Get Started</a>
+            </article>
+
+        </section>
+
+    </header>
+
+    <figure class="absolute inset-0 overflow-hidden pointer-events-none">
+        <img src="./images/bg-tablet-pattern.svg" alt="tablet" class="absolute w-full -z-10 -top-24 -right-1/4 max-w-2xl">
+    </figure>
+
+    <main>
+
+        <section class="container text-center py-24 grid gap-12 md:grid-cols-2 md:text-left">
+            <article>
+                <h2 class="text-3xl font-bold text-very-dark-blue mb-6 text-4xl">What´s different about Manage?</h2>
+                <p class="text-dark-grayish-blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium nobis non sunt! Dicta officia
+                    aliquid repellat minus? Autem mollitia cum culpa perferendis, impedit vitae eligendi tempore natus
+                    optio nam amet.</p>
+            </article>
+
+            <!--Div con articulos-->
+            <div class="grid gap-12">
+                <article class="space-y-4 md:space-y-6">
+                    <p class="bg-very-pale-red rounded-l-full flex items-center md:bg-transparent">
+                        <span class="bg-brigth-red rounded-full py-2 px-6 text-white">01</span>
+                        <span class="flex-1 p-2">Track company-wide progress</span>
+                    </p>
+    
+                    <p class="text-dark-grayish-blue text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium architecto quisquam excepturi, eveniet officiis adipisci libero ex impedit nobis debitis vel incidunt id nemo ducimus eius! Praesentium, dicta doloremque.</p>
+                </article>
+
+                <article class="space-y-4 md:space-y-6">
+                    <p class="bg-very-pale-red rounded-l-full flex items-center md:bg-transparent">
+                        <span class="bg-brigth-red rounded-full py-2 px-6 text-white">02</span>
+                        <span class="flex-1 p-2">Advanced built in reports</span>
+                    </p>
+    
+                    <p class="text-dark-grayish-blue text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium architecto quisquam excepturi, eveniet officiis adipisci libero ex impedit nobis debitis vel incidunt id nemo ducimus eius! Praesentium, dicta doloremque.</p>
+                </article>
+
+                <article class="space-y-4 md:space-y-6">
+                    <p class="bg-very-pale-red rounded-l-full flex items-center md:bg-transparent">
+                        <span class="bg-brigth-red rounded-full py-2 px-6 text-white">03</span>
+                        <span class="flex-1 p-2">Everything need in a place</span>
+                    </p>
+    
+                    <p class="text-dark-grayish-blue text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium architecto quisquam excepturi, eveniet officiis adipisci libero ex impedit nobis debitis vel incidunt id nemo ducimus eius! Praesentium, dicta doloremque.</p>
+                </article>
+    
+            </div> 
+        </section>  
+        
+        <section class="container text-center py-24 max-w-lg mx-auto">
+
+            <h2 class="text-3xl font-bold text-very-dark-blue">What they´ve said</h2>
+
+            <div class="mt-24 mb-14">
+                <article class="bg-vary-light-gray pt-16 pb-12 px-4 relative">
+                    <img src="./images/avatar-ali.png" alt="abatar" class="absolute w-24 aspect-square -top-12 inset-x-0 mx-auto">
+                    <h3 class="text-xl mb-4 pt-2 font-bold text-very-dark-blue">Ali Bravo</h3>
+                    <p class="text-dark-grayish-blue">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quo nostrum iure tempora quam quos nam nisi dolore nihil fugit molestias dolor accusantium voluptatum eum deserunt, adipisci eligendi iste earum.</p>                    
+                </article>
+            </div>
+
+            <a href="#" class="button inline-block shadow-xl shadow-brigth-red/30">Get Started</a>
+
+        </section>
+
+
+        <section class="bg-brigth-red text-center text-vary-light-gray">
+            <div class="container py-24 grid gap-6 md:grid-cols-[40%_40%] md:justify-between md:text-left">
+                <h2 class="text-4xl">Simplify how your team works today.</h2>
+                <a href="#" class="button text-brigth-red bg-vary-light-gray mx-auto md:justify-self-end md:mx-0 md:inline-block md:self-center">Get Started</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-very-dark-blue text-dark-grayish-blue py-24" id="footer">
+        <section class="container grid gap-12 justify-items-center footer-area md:footer-area-md">
+
+            <form action="#" class="flex gap-10 min-w-[100px] w-full [grid-area:form]">
+                <input type="email" placeholder="Updates in your inbox..."
+                class="min-w-[50px] flex-1 rounded-full px-4"
+                >
+
+                <input type="submit" value="GO"
+                class="bg-brigth-red text-slate-50 py-3 px-8 rounded-full"
+                >
+            </form>
+
+            <nav class="grid grid-cols-[max-content_max-content] gap-y-4 justify-between text-white w-4/5 [grid-area:navigation] md:w-full">
+                <a href="#">Home</a>
+                <a href="#">Pricing</a>
+                <a href="#">products</a>
+                <a href="#">About-Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Community</a>
+                <a href="#">Privacy Policy</a>
+            </nav>
+
+            <div class="flex flex-wrap gap-4 justify-between w-full [grid-area:social-media]">
+                <a href="#">
+                    <img src="./images/icon-facebook.svg" alt="icon-facebook"
+                    class="w-8">
+                </a>
+                <a href="#">
+                    <img src="./images/icon-youtube.svg" alt="youtube"
+                    class="w-8">
+                </a>
+                <a href="#">
+                    <img src="./images/icon-twitter.svg" alt="twitter"
+                    class="w-8">
+                </a>
+                <a href="#">
+                    <img src="./images/icon-pinterest.svg" alt="pinterest"
+                    class="w-8">
+                </a>
+                <a href="#">
+                    <img src="./images/icon-instagram.svg" alt="instagram"
+                    class="w-8">
+                </a>
+            </div>
+
+            <a href="#" class="[grid-area:logo]">
+                <img src="./images/logo.svg" alt="logo">
+            </a>
+
+            <p class="text-dark-grayish-blue text-center [grid-area:copy] md:text-right">Copyright 2000 Reserved</p>
+
+        </section>
+    </footer>
+
+
+</body>
+
+</html>
